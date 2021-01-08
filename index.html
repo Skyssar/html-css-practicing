@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Autor: Skyssar -->
+<!-- Código de uso educativo -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica HTML-CSS</title>
+    <link rel="stylesheet" href="style.css"> <!-- Llamo a la hoja de estilos CSS -->
+</head>
+
+<!-- El cuerpo del documento  -->
+<body>
+
+    <!-- Agregar estilo RCN -->
+    <style>
+        figcaption{
+            font-size: small;
+            color: brown;
+        }
+    </style>
+    
+    <!-- Header -->
+    <header>
+
+        <!-- Barra de navegación -->
+        <nav>
+            <a href="#exampleParagraph">HTML</a> |
+            <a href="">CSS</a> |
+            <a href="">JavaScript</a> |
+            <a href="">Python</a>
+        </nav>
+        
+    </header>
+
+    <!-- Contenido Principal -->
+    <main>
+
+        <!-- Parrafado -->
+        <h1 class="titulo">Esto es un título hache-uno (con estilos)</h1>
+
+        <hr> <!-- Horizontal rule -->
+
+        <h6>Este es el último título, el hache-seis</h6>
+        <span>Esto es un span <b>en negrita</b> </span><br>
+        <span>Esto es un span <i>en cursiva</i> </span><br>
+        <span>Esto es un span <em>en cursiva</em> </span><br>
+        <a href="https://github.com/Skyssar" target="_blank">Esto es un enlace</a>
+
+        <figure>          
+            <img src="https://www.godisageek.com/wp-content/uploads/overwatch-tracer-comic-new-cropped-hed-1236895-1280x0-1.jpeg" 
+            alt="Already tracer" width="500" height="300">
+            <figcaption>Already Tracer</figcaption>
+        </figure>
+
+        <section id="exampleParagraph">
+            <!-- Agregar estilo en la etiqueta -->
+            <h2 style="color: blueviolet;">Título genérico</h2>
+            <p class="parrafo">
+                Esto es un párrafo: p y por defecto un lorem: 
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                Temporibus maxime error, iure quae asperiores voluptatibus. 
+                Maiores quas fugit, unde sint reiciendis, facilis tempora culpa dicta officia quam, 
+                quibusdam facere quis!
+            </p>
+        </section>
+
+
+        <!-- Formularios -->
+        <h2 class="subtitulo">Formularios</h2>
+        <form>
+
+            <!-- Input text -->
+            <div>
+                <label for="prueba">Input Text:</label>
+                <input type="text" placeholder="Digit your name" id="prueba">
+                <button>Click on me</button> 
+            </div> 
+
+            <!-- Input radios -->
+            <div>
+
+                <!-- Lista ordenada -->
+                <ol>
+                    <li>
+                        <input type="radio" name="n-radio" id="n-radio">
+                        <label for="n-radio">Normal Radio</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="c-radio" id="c-radio" checked>  
+                        <label for="n-radio">Checked Radio</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="u-radio" id="u-radio" disabled>
+                        <label for="n-radio">Disabled Radio</label>  
+                    </li>                  
+                </ol>
+
+            </div> 
+
+            <!-- Input checkbox -->
+            <div>
+
+                <!-- Lista no ordenada -->
+                <ul>
+                    <li>
+                        <input type="checkbox" id= "n-checkbox">
+                        <label for="n-checkbox">Normal Checkbox</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id= "c-checkbox" checked>
+                        <label for="c-checkbox">Checked Checkbox</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id= "d-checkbox" disabled>
+                        <label for="c-checkbox">Disabled Checkbox</label>
+                    </li>
+                </ul>
+
+            </div>
+
+            <!-- Input submit -->
+            <div>
+                <label for="submit">Input Submit:</label>               
+                <input type="submit" id="submit">                             
+            </div>
+
+        </form>
+
+        <!-- &nbsp: NON BREAKING SPACE  -->
+
+    </main>
+
+    <footer>
+
+        <h6>Created by: YasarJosé</h6>
+
+    </footer>
+    
+</body>
+<!-- Fin del body -->
+
+</html>
