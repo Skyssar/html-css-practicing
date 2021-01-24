@@ -5,8 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formularios</title>
     <style>
-        input {
-            width: 60%;
+        body{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-image: url("tracer-de-overwatch.jpg");
+        }
+        input[type="text"] {
+            width: 100%; /* ancho */
+            padding: 10px 10px; /* relleno */
+            margin: 8px 0px; /* margen */
+            border: 3px solid red; /* borde */
+            border-radius: 5px; /* el radio del borde */
+            box-sizing: border-box;  /* tamaño de la caja */
+            background-color: black; /* color del fondo */
+            color: blanchedalmond; /* color de la letra en este caso */ 
+        }
+        input:focus{ /* Cuando enfocas el input */
+            border: 3px solid blue; /* borde */
+        }
+        ::placeholder{ /* pseudoclase */
+            color: beige;
         }
     </style>
 </head>
@@ -18,11 +35,14 @@
     <main>
         <form action="http://localhost:3000" method="POST">
             <label for="name">Nombre</label>
-            <input type="text" id="name" name="name" required autofocus/>
+            <input type="text" id="name" name="name" placeholder="Ingresa tu nombre" required autofocus/>
             <br>
             <label for="lastname">Apellido</label>
-            <input type="text" id="lastname" name="lastname"/> 
+            <input type="text" id="lastname" name="lastname" placeholder="Ingresa tu last-nombre"/> 
             <br>
+            <select name="country" id="country">
+                <option v></option>
+            </select>
             <button type="submit">Send</button>
         </form>
     </main>
